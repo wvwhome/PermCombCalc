@@ -1,0 +1,33 @@
+#   app.yaml
+
+#  02/13/2019 WVW: Cloned from a Google demo.
+#  03/05/19 WVW: Copy and modify for C:\aaWVW\programs\GCP\Python\Flask_Blog\06-Login-Auth-wvw-MySQL
+#  03/18/19 WVW: Add url for favicon.
+#  03/25/19 WVW: Module version.
+
+
+runtime: python37
+env: standard
+instance_class: F1
+handlers:
+  - url: .*
+    script: auto
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+network: {}
+# runtime: python
+# env: flex
+# entrypoint: gunicorn -b :$PORT main:app
+
+# runtime_config:
+#  python_version: 3
+
+# - url: /favicon.ico
+# static_files: static/images/favicon.ico
+# upload: static/images/favicon.ico
+
+
+
