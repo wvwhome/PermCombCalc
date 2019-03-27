@@ -6,11 +6,13 @@
     <!--  03/16/19  KISS simplify:  Remove static/main.css usage    -->
     <!--  03/18/19  Remove role=main  -->  
     <!--  03/25/19  Update with url_for functions   -->  
+    <!--  03/26/19  Add main_subset.css - needed for book-title class -->
     
-    <!-- Required meta tags -->
+    <!-- Required meta tags for Bootstrap -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+  
+    <!--  For Search Engines -->  
     <meta name="description" content="Permutations with Duplicates Calculator and Generator"/>
     <meta name="keywords" content="permutations combinations duplicates repeats repetitions multiplicity" />
     <meta name="keywords" content="permutation  combination  duplicate  repeat  repetition  multiples" />
@@ -20,13 +22,13 @@
     <meta name="keywords" content="subset submultiset proper wvw combinatorics bag mset" />
     <meta name="keywords" content="generator generating generation calculator online" />    
 
-
  <!-- Bootstrap CSS  4.3.1 -->
    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main_subset.css')}}"> 
 
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}" type="image/x-icon" />
 
     <title>Permutations Combinations Calculators</title>
 
